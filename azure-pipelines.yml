@@ -21,8 +21,8 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'armconnection'
-    subscriptionId: 'a20bcda5-ec8b-42db-a8ad-09656ecdc141'
+    azureResourceManagerConnection: 'your-arm-service-connection'
+    subscriptionId: 'your-subscription-id'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'ARMPipelinesLAMP-rg'
     location: 'eastus'
